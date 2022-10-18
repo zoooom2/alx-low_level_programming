@@ -15,17 +15,11 @@ void jack_bauer(void)
    {
     for(min=0; min<24; min++)
     {
-        if(hrs < 10)
-        {
-            _putchar('0');
-        }
-        _putchar(hrs + '0');
-        _putchar(':');
-        if(min < 10)
-        {
-            _putchar('0');
-        }
-        _putchar(min + '0');
+        _putchar((hrs / 10) + '0');
+        _putchar((hrs % 10) + '0');
+        _putchar(':');        
+        _putchar((min / 10) + '0');
+        _putchar((min % 10) + '0');
         _putchar('\n');
     }
    }
