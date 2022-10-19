@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * main - printing of last digit
- * Return: 0 on success
+ * print_last_digit - a function that prints the last digit of a number
+ * @a: number's last digit result
+ * Return: value of the last digit
  */
 int print_last_digit(int a)
 {
