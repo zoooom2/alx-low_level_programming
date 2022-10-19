@@ -4,9 +4,8 @@
 /**
  * main - printing absiolutes of numbers
  * Return: 0 on success
- * 
  */
 int _abs(int a)
 {
-    return (a * ((a > 0)- (a < 0)));
+	return (a * ((a > 0) - (a < 0)));
 }
