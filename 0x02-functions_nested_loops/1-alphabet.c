@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * main - prints the alphabet
- * Return: 0 on success
+ * print_alphabet - prints the alphabet, in lowercase,
+ * followed by a new line
  */
 void print_alphabet(void)
 {
