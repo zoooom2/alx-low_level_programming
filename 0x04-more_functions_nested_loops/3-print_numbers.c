@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - to print number from 0 t0 9
- * followed by a new line
+ * main - to print number from 0 to 9 followed by a new line
  * Return: void
  *
  */
