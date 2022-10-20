@@ -7,7 +7,7 @@
  * main - assigns a random number to n
  * Return: 0 if exited properly
  */
-int main(void)
+void positive_or_negative(int i)
 {
     int n;
 
