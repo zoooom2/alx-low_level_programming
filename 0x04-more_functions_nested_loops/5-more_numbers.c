@@ -8,19 +8,19 @@
  */
 void more_numbers(void)
 {
-	int line;
-	int i;
+    int line;
+    int i;
 
-	for (line = 0; line < 10; line++)
-	{
-		for (i = 0; i < 10; i++)
-		{
-			_putchar(i + '0');
-		}
-		for (i = 1; i <= 4; i++)
-		{
-			_putchar(1 + '0');
-			_putchar(i + '0');
-		}
-	}
+    for (line = 0; line < 10; line++)
+    {
+        for (i = 0; i < 10; i++)
+        {
+            _putchar(i + '0');
+        }
+        for (i = 1; i <= 4; i++)
+        {
+            _putchar('1');
+            _putchar(i + '0');
+        }
+    }
 }
