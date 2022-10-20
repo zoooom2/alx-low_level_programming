@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - check if the alphabet is uppercase
+ * _isupper - check if the alphabet is uppercase
  * Return: Always 1 if exited properly
  *
  * @c: the number to be checked

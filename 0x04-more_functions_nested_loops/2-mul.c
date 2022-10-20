@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - to check if its digit
+ * mul - to check if its digit
  * Return: Always 1 if it's digit
  * @a: is the first parameter
  * @b: is the second parameter

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints number with fizz_buzz
+ * fizz_buzz - prints number with fizz_buzz
  * Return: void
  */
 

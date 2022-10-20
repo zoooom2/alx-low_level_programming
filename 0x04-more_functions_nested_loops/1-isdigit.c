@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - to check if its digit
+ * _isdigit - to check if its digit
  * Return: Always 1 if it's digit
  * @d: is the digit to be checked
  *
