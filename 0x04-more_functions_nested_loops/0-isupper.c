@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - check if the alphabet is uppercase
+ * Return: Always 1 if exited properly
+ *
+ */
+int _isupper(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return 1;
+    else
+        return 0;
+}
