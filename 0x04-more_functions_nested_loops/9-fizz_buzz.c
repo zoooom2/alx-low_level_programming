@@ -1,32 +1,26 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * fizz_buzz - prints number with fizz_buzz
- * Return: void
+ * main - Entry piont
+ * Return: Always 0
  */
-
-void fizz_buzz(void)
+int main(void)
 {
-	int i;
+    int i = 1;
 
-	for (i = 0; i < 100; i++)
-	{
-		if (i % 3 == 0)
-		{
-			puts("Fizz ");
-		}
-		else if (i % 5)
-		{
-			puts("Buzz ");
-		}
-		else if (i % 3 && i % 5)
-		{
-			puts("FizzBuzz ");
-		}
-		else
-		{
-			printf("%d ", i);
-		}
-	}
+    for (; i < 100; i++)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+            printf("FizzBuzz ");
+        else if (i % 3 == 0)
+            printf("Fizz ");
+        else if (i % 5 == 0)
+            printf("Buzz ");
+        else
+            printf("%d ", i);
+    }
+    printf("Buzz\n");
+
+    return (0);
 }
