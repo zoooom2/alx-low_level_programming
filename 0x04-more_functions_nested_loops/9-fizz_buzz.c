@@ -14,19 +14,19 @@ void fizz_buzz(void)
     {
         if (i % 3 == 0)
         {
-            printf("Fizz ");
+            puts("Fizz ");
         }
         else if (i % 5)
         {
-            printf("Buzz ");
+            puts("Buzz ");
         }
         else if (i % 3 && i % 5)
         {
-            printf("FizzBuzz ");
+            puts("FizzBuzz ");
         }
         else
         {
-            printf("%d", i);
+            printf("%d ", i);
         }
     }
 }
