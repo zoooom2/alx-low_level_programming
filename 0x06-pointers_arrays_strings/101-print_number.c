@@ -19,7 +19,7 @@ void print_number(int n)
         tmp++;
     }
 
-    for (i = tmp; i > 0; i--)
+    for (i = tmp; i >= 0; i--)
     {
         tmp = i;
         while (tmp != 0)
