@@ -17,9 +17,9 @@ char *leet(char *words)
     {
         for (idx = 0; idx < 10; idx++)
         {
+            printf("%c %c", table[index], num[idx]);
             if (words[index] == table[idx])
             {
-                printf("%c", table[idx]);
                 words[index] = num[idx];
             }
         }
