@@ -13,17 +13,16 @@ char *leet(char *words)
     char num[10] = {'4', '4', '0', '0', '3', '3', '7', '7', '1', '1'};
     int index, idx;
 
-    // for (index = 0; index != '\0'; index++)
-    // {
-    //     for (idx = 0; idx < 10; idx++)
-    //     {
-    //         printf("%c %c", table[index], num[idx]);
-    //         if (words[index] == table[idx])
-    //         {
-    //             words[index] = num[idx];
-    //         }
-    //     }
-    // }
+    for (index = 0; index != '\0'; index++)
+    {
+        for (idx = 0; idx < 10; idx++)
+        {
+            if (words[index] == table[idx])
+            {
+                words[index] = num[idx];
+            }
+        }
+    }
 
-    return (words[0] = 3);
+    return (words);
 }
