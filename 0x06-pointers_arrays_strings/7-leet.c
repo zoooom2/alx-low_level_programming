@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -18,6 +19,7 @@ char *leet(char *words)
         {
             if (words[index] == table[idx])
             {
+                printf("%c", table[idx]);
                 words[index] = num[idx];
             }
         }
