@@ -17,9 +17,15 @@ int _strcmp(char *s1, char *s2)
         index++;
     }
     if (s1[index] == s2[index])
-        return 0;
+    {
+        return (0);
+    }
     else if (s1[index] != s2[index] && s1[index] > s2[index])
-        return 1;
+    {
+        return (1);
+    }
     else if (s1[index] != s2[index] && s1[index] < s2[index])
-        return -1;
+    {
+        return (-1);
+    }
 }
