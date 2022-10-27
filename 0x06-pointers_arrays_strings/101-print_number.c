@@ -21,6 +21,8 @@ void print_number(int n)
         tmp++;
     }
 
+    printf("%d", tmp);
+
     for (i = tmp; i >= 0; i--)
     {
         tmp = i;
@@ -31,8 +33,11 @@ void print_number(int n)
         }
         num = n / power;
 
+        printf("%d", num);
+
         _putchar(num + '0');
 
         n -= (num * power);
+        printf("%d", n);
     }
 }
