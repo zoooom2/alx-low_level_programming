@@ -6,22 +6,19 @@
  * @return char*
  */
 
-char *cap_string(char *word)
+char *cap_string(char *s)
 {
-    int index = 0;
+    int index, j;
+    char options[] = " \t\n,;.!?\"(){}";
 
-    while (word[index] != '\0')
+    for (index = 0; s[index] != '\0'; index++)
     {
-        if (word[index - 1] == ' ' || word[index - 1] == '\t' || word[index - 1] == '\n' || word[index - 1] == ',' || word[index - 1] == ';' || word[index - 1] == '.' || word[index - 1] == '!' || word[index - 1] == '?' || word[index - 1] == '"' || word[index - 1] == '(' || word[index - 1] == ')' || word[index - 1] == '{' || word[index - 1] == '}')
-        {
-            if (word[index] >= 97 || word[index] <= 122)
-            {
-                word[index] -= 32;
-            }
-        }
-
-        index++;
+        if (s[0] >= 97 && s[0] <= 122)
+            s[0] = s[0] - 32;
+        for (j = 0; options[j] != '\0'; j++)
+            if (s[index] == options[j] && s[index + 1] >= 97 && s[index + 1] <= 122)
+                s[index + 1] = s[index + 1] - 32;
     }
 
-    return (word);
+    return (s);
 }
