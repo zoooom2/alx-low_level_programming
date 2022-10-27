@@ -20,5 +20,12 @@ void print_diagonal(int n)
 		}
 	}
 	else
+<<<<<<< HEAD
+	{
 		_putchar('\n');
+	}
+
+=======
+		_putchar('\n');
+>>>>>>> 8e7f32bd16c96060ed65c26bdefd27a887484320
 }
