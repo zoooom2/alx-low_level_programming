@@ -31,6 +31,6 @@ void print_number(int n)
 
         _putchar(num + '0');
 
-        n = n % power;
+        n -= (num * power);
     }
 }
