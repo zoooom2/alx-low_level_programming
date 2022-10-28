@@ -14,6 +14,12 @@ void print_number(int n)
     int power = 1;
     int num;
 
+    if (n < 0)
+    {
+        _putchar('-');
+        n *= -1;
+    }
+
     while ((n / divider) >= 1)
     {
         divider *= 10;
