@@ -35,6 +35,11 @@ void print_number(int n)
             tmp--;
         }
 
+        if (n < power)
+        {
+            continue;
+        }
+
         if (n > 9)
         {
             num = n / power;
