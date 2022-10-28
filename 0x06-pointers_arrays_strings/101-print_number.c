@@ -34,10 +34,18 @@ void print_number(int n)
             power *= 10;
             tmp--;
         }
-        num = n / power;
 
-        _putchar(num + '0');
+        if (n > 9)
+        {
+            num = n / power;
 
-        n -= (num * power);
+            _putchar(num + '0');
+
+            n -= (num * power);
+        }
+        else
+        {
+            _putchar(n);
+        }
     }
 }
