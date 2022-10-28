@@ -1,49 +1,26 @@
 #include "main.h"
 
 /**
- * @brief a function that prints an integer
- *
- * @param n
- */
+ * print_number - print numbers chars
+ * @n: integer params
+ * Return: 0
+ **/
 
 void print_number(int n)
 {
-    int i;
-    int tmp = 0;
-    int divider = 10;
-    int power = 1;
-    int num;
+    unsigned int n1;
+
+    n1 = n;
 
     if (n < 0)
     {
         _putchar('-');
-        n *= -1;
+        n1 = -n;
     }
 
-    while ((n / divider) >= 1)
+    if (n1 / 10 != 0)
     {
-        divider *= 10;
-        ++tmp;
+        print_number(n1 / 10);
     }
-
-    for (i = tmp; i >= 0; i--)
-    {
-        tmp = i;
-        while (tmp != 0)
-        {
-            power *= 10;
-            tmp--;
-        }
-        if (n > 9)
-        {
-            num = n / power;
-            _putchar(num + '0');
-        }
-        else
-        {
-            _putchar(num + '0');
-        }
-        if (n - (num * power) > 0)
-            n -= (num * power);
-    }
+    _putchar((n1 % 10) + '0');
 }
