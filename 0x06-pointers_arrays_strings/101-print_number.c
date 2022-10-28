@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -15,15 +14,13 @@ void print_number(int n)
     int power = 1;
     int num;
 
-    while ((n / divider) > 1)
+    while ((n / divider) >= 1)
     {
         divider *= 10;
-        tmp++;
+        ++tmp;
     }
 
-    printf("%d", tmp);
-
-    for (i = tmp; i >= 0; i--)
+    for (i = tmp; i > 0; i--)
     {
         tmp = i;
         while (tmp != 0)
@@ -33,11 +30,8 @@ void print_number(int n)
         }
         num = n / power;
 
-        printf("%d", num);
-
         _putchar(num + '0');
 
         n -= (num * power);
-        printf("%d", n);
     }
 }
