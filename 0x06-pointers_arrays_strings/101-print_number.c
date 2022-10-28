@@ -40,12 +40,13 @@ void print_number(int n)
             num = n / power;
 
             _putchar(num + '0');
-
-            n -= (num * power);
         }
         else
         {
             _putchar(n + '0');
+            power = 0;
         }
+
+        n -= (num * power);
     }
 }
