@@ -41,7 +41,7 @@ void print_number(int n)
         }
         else
         {
-            _putchar(n + '0');
+            _putchar(num + '0');
         }
         if (n - (num * power) > 0)
             n -= (num * power);
