@@ -34,15 +34,14 @@ void print_number(int n)
             power *= 10;
             tmp--;
         }
-
-        if (n < power)
-        {
-            continue;
-        }
-
         if (n > 9)
         {
             num = n / power;
+
+            if (num == 0)
+            {
+                continue;
+            }
 
             _putchar(num + '0');
         }
