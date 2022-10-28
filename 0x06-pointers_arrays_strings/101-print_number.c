@@ -37,20 +37,13 @@ void print_number(int n)
         if (n > 9)
         {
             num = n / power;
-
-            if (num == 0)
-            {
-                continue;
-            }
-
             _putchar(num + '0');
         }
         else
         {
             _putchar(n + '0');
-            power = 0;
         }
-
-        n -= (num * power);
+        if (n - (num * power) > 0)
+            n -= (num * power);
     }
 }
