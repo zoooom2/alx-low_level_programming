@@ -8,7 +8,7 @@
  *
  * @dest: the destination string
  * @src: the source string
- * return: char* when successful
+ * Return: char* when successful
  */
 
 char *_strcat(char *dest, char *src)

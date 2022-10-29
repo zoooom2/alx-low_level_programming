@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * @brief a function that encodes a string using rot13
+ * rot13 - a function that encodes a string using rot13
+ * @s: string to be converted
  *
- * @return char*
+ * Return: char*
  */
 char *rot13(char *s)
 {
