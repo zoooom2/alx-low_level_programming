@@ -1,26 +1,23 @@
 #include "main.h"
 
 /**
- * @brief The function should work exactly like strncpy
- *
- * @param s1 the string to copy to
- * @param s2 the string to copy from
- * @return int
+ * _strcmp - compare
+ * @s1 : pointerto char params
+ * @s2 : pointer to char params
+ * Return: *dest
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int index = 0;
-	int result;
+	int i;
+	int R;
 
-	while ((s1[index] == s2[index]) && (s1[index] != '\0' || s2[index] != '\0'))
+	i = 0;
+
+	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
 	{
-		index++;
+		i++;
 	}
-	if (s1[index] == s2[index])
-	{
-		return (0);
-	}
-	result = s1[index] - s2[index];
-	return (result);
+	R = s1[i] - s2[i];
+	return (R);
 }

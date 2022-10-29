@@ -1,29 +1,32 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _strcat - This function appends the src string to the dest string,
- * overwriting the terminating null byte (\0) at the end of dest, and then
- * adds a terminating null byte
- *
- * @dest: the destination string
- * @src: the source string
- * Return: char* when successful
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int length = 0, index;
+	int i;
+	int j;
 
-	while (dest[length])
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
 	{
-		length++;
+		i++;
 	}
-	for (index = 0; src[index] != '\0'; index++)
+
+	while (src[j] != '\0')
 	{
-		dest[length] = src[index];
-		length++;
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
-	dest[length] = '\0';
+
+	dest[i] = '\0';
 	return (dest);
 }
