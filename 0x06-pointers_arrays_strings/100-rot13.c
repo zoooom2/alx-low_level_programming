@@ -5,21 +5,19 @@
  *
  * @return char*
  */
-
 char *rot13(char *s)
 {
-    int i, j;
-    char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-    for (i = 0; i != '\0'; i++)
-    {
-        for (j = 0; j != '\0'; j++)
-        {
-            if (input[j] == s[i] && ((s[i] > 'a' && s[i] < 'z') || (s[i] > 'A' && s[i] < 'Z')))
-                s[i] = output[j];
-        }
-    }
-
-    return (s);
+	for (i = 0; i != '\0'; i++)
+	{
+		for (j = 0; j != '\0'; j++)
+		{
+			if (a[j] == s[i] && ((s[i] > 'a' && s[i] < 'z') || (s[i] > 'A' && s[i] < 'Z')))
+				s[i] = output[j];
+		}
+	}
+	return (s);
 }
