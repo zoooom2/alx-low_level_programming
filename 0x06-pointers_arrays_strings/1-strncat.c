@@ -1,26 +1,33 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * _strncat - is similar to the _strcat function, except that
- * it will use at most n bytes from src
- * src does not need to be null-terminated if it contains n or more bytes
- *
- * @dest: the destination string
- * @src: the source string
- * @n: the number of bytes to append to dest
- * Return: char* when successful
+ * _strncat - two words
+ * @dest : pointer to char param
+ * @src : pointer to char param
+ * @n : int parameter
+ * Return: *dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int length = 0, index;
+	int m;
+	int i;
 
-	while (dest[length] != '\0')
+	m = 0;
+
+	for (i = 0; i < 1000; i++)
 	{
-		length++;
+		if (dest[i] == '\0')
+		{
+			break;
+		}
+		m++;
 	}
-	for (index = 0; index < n && src[index] != '\0'; index++)
-		dest[length + index] = src[index];
-	dest[length + index] = '\0';
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
+	{
+		dest[m + i] = src[i];
+	}
+	dest[m + i] = '\0';
 	return (dest);
 }

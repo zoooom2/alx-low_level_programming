@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - perform magic
- * Return: null
- */
-
 int main(void)
 {
   int n;

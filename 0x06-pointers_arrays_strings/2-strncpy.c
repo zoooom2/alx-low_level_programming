@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * @brief Your function should work exactly like strncpy
- *
- * @param dest the destination string
- * @param src the source string
- * @param n the number of bytes to copy
- * @return char*
+ * _strncpy - two words
+ * @dest : pointer to char params
+ * @src : pointer to char params
+ * @n : int params
+ * Return: *dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -17,6 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
+
 	for (; i < n; i++)
 	{
 		dest[i] = '\0';
