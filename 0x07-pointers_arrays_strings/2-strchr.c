@@ -21,13 +21,14 @@ char *_strchr(char *s, char c)
                 p[j] = s[i];
                 i++;
             }
-            return p;
+
             break;
         }
         else if (s[i + 1] == '\0')
         {
-            return ("");
+            p = "";
             break;
         }
     }
+    return (p);
 }
