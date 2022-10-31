@@ -16,16 +16,13 @@ char *_strchr(char *s, char c)
     {
         if (s[i] == c)
         {
-            for (j = 0; j != '\0'; j++)
-            {
-                p[j] = s[i];
-            }
-            p[j] = '\0';
-            return (p);
+            return (p[i]);
+            break;
         }
         else if (s[i + 1] == '\0')
         {
             return ("");
+            break;
         }
     }
 }
