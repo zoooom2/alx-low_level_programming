@@ -6,7 +6,7 @@
  * @dest: destination
  * @src: source
  * @n: number
- * @return char*
+ * Return: char*
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -17,5 +17,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
-	return dest;
+	return (dest);
 }
