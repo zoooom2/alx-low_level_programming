@@ -5,11 +5,12 @@
  *
  * @s: The string
  * @accept: The string to check
- * @return unsigned
+ * Return: unsigned
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
+
 	i = 0;
 	while (s[i] != '\0')
 	{
